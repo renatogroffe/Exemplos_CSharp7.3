@@ -11,17 +11,17 @@ namespace ExemploAutoImplementedAttribute
         {
             public int Valor1 { get; set; }
 
-            [NonSerialized]
+            /*[NonSerialized]
             private int _valor2;
 
             public int Valor2
             {
                 get { return _valor2; }
                 set { _valor2 = value; }
-            }
+            }*/
 
-            /*[field: NonSerialized]
-            public int Valor2 { get; set; }*/
+            [field: NonSerialized]
+            public int Valor2 { get; set; }
         }
 
         static void Main(string[] args)
